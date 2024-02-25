@@ -48,10 +48,7 @@ a {
 }
 
 .dropbtn {
-    background-color: transparent;
-    color: white;
     font-size: 16px;
-    border: none;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -70,8 +67,10 @@ a {
     margin-top: 10px;
     background-color: #1e293b;
     min-width: 160px;
+    max-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-radius: 5px;
 }
 
 .dropdown-content a {
@@ -83,6 +82,7 @@ a {
 
 .dropdown-content a:hover {
     background-color: #212e43;
+    border-radius: 5px;
 }
 
 .show {
