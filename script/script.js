@@ -1,12 +1,8 @@
 const dropdownToggle = document.getElementById("dropdownbtn");
 const listDropdown = document.getElementById("myDropdown");
-dropdownToggle.addEventListener('mouseover', () => {
-    listDropdown.classList.add("show");
-});
-
-dropdownToggle.addEventListener('mouseout', () => {
-    listDropdown.classList.remove("show");
-});
+dropdownToggle.addEventListener('click', () => {
+    listDropdown.classList.toggle("show");
+})
 
 
 window.onclick = function (event) {
