@@ -179,5 +179,65 @@ main #content {
 }
 
 main aside {
-    background-color: brown;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid black;
+    position: relative;
+}
+
+main aside .background {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+main aside .background .black {
+    background-color: black;
+    height: 50%;
+    width: 100%;
+}
+
+main aside .content {
+    position: relative;
+    z-index: 5;
+}
+
+main aside .content h1 {
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+main aside .content img {
+    height: 200px;
+    border-radius: 5px;
+}
+
+main aside .content .name {
+    margin-bottom: 5px;
+    font-size: 25px;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+main aside .content .bio {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+main aside .content .icon {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 10px;
+}
+
+main aside .content .icon li {
+    cursor: pointer;
 }
