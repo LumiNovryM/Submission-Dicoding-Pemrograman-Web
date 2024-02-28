@@ -75,6 +75,31 @@ a {
     color: black;
 }
 
+nav .first-header span {
+    font-size: 32px;
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    nav .small-nav {
+        display: none;
+    }
+
+    nav .first-header span {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav .first-header ul {
+        display: none;
+    }
+
+    nav .second-header {
+        display: none;
+    }
+
+}
 
 
 nav .second-header {
