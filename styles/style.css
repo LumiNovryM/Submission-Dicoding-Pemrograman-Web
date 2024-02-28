@@ -164,3 +164,20 @@ nav .second-header ul li a {
 .show {
     display: block;
 }
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 5%;
+}
+
+main #content {
+    background-color: blue;
+}
+
+main aside {
+    background-color: brown;
+}
