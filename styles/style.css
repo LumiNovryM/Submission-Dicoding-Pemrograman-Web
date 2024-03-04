@@ -6,13 +6,6 @@
     font-family: 'Inter';
 }
 
-body {
-    background-image: url('../assets/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-}
-
 nav .small-nav {
     padding-top: 20px;
     padding-bottom: 0px;
@@ -101,7 +94,6 @@ nav .first-header span {
 
 }
 
-
 nav .second-header {
     background: black;
     padding: 20px 2.5%;
@@ -172,6 +164,7 @@ main {
     display: grid;
     grid-template-columns: 65% 30%;
     gap: 5%;
+    height: 1000px;
 }
 
 @media (max-width: 932px) {
@@ -181,7 +174,37 @@ main {
 }
 
 main #content {
-    background-color: blue;
+    height: fit-content;
+}
+
+main #content .first-news {
+    height: 600px;
+}
+
+main #content .first-news img {
+    width: 100%;
+}
+
+main #content .first-news h1 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+main #content .first-news h5 {
+    font-weight: 500;
+}
+
+main #content .first-news div {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-size: 12px;
+}
+
+main #content .first-news div span {
+    font-size: 18px;
+    font-weight: normal;
 }
 
 main aside {
@@ -190,6 +213,13 @@ main aside {
     padding: 20px;
     border: 3px solid black;
     position: relative;
+    height: 450px;
+}
+
+@media (max-width: 932px) {
+    main aside {
+        height: fit-content;
+    }
 }
 
 main aside .background {
